@@ -11,6 +11,63 @@ ul, ol {
 }
 
 a {
-    text-decoration: none;    
+    text-decoration: none;
+}
+
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background: #fff;
+    color: #111;
+}
+
+header {
+    background: #111;
+    border-bottom: 1px solid #000;
+}
+
+header .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+header ul {
+    display: flex;
+    gap: 32px;
+}
+
+header ul a {
+    color: #ccc;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: color .2s;
+}
+
+header ul a:hover {
+    color: #fff;
+}
+
+header .util {
+    gap: 20px;
+}
+
+header .util a {
+    color: #777;
+    font-size: 12px;
+}
+
+header .util a:hover {
+    color: #fff;
 }
 
