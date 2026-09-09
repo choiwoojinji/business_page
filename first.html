@@ -48,11 +48,11 @@
             </ul>
 
             <ul class="util">
-                <li><a href="#">Contact</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
                 <li><a href="#">Help</a></li>
                 <li><a href="#">Login</a></li>
                 <li><a href="#">Join</a></li>
-                <li><a href="#">Sitemap</a></li>
+                <li><a href="pages/sitemap.html">Sitemap</a></li>
             </ul>
 
             <button class="menu-toggle" aria-label="메뉴 열기" aria-expanded="false">
@@ -69,6 +69,19 @@
             <h2>CODE.<br>DESIGN.<br>REPEAT.</h2>
             <p class="desc">아이디어를 코드로 완성하는 공간, DCODLAB에서 시작하세요.</p>
             <a href="#department" class="btn">EXPLORE DEPARTMENT</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="inner">
+            <p class="eyebrow">ABOUT</p>
+            <h3>흑백처럼 명확하게,<br>코드와 디자인을 배우는 곳</h3>
+            <p class="about-desc">DCODLAB은 프론트엔드, 백엔드, 디자인을 실습 중심으로 배우는 코딩 스튜디오입니다. 화려한 이론보다 직접 만들어보는 과정을 통해 실력을 쌓습니다.</p>
+            <ul class="stats">
+                <li><strong>3</strong><span>전문 트랙</span></li>
+                <li><strong>6</strong><span>단계별 커리큘럼</span></li>
+                <li><strong>1</strong><span>제주도 캠퍼스</span></li>
+            </ul>
         </div>
     </section>
 
@@ -152,14 +165,24 @@
         <div class="inner">
             <p class="footer-logo">DCODLAB</p>
             <ul class="footer-links">
-                <li><a href="#">Contact</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
                 <li><a href="#">Help</a></li>
-                <li><a href="#">Sitemap</a></li>
+                <li><a href="pages/sitemap.html">Sitemap</a></li>
             </ul>
             <p class="copyright">&copy; 2026 DCODLAB. All rights reserved.</p>
         </div>
     </footer>
 
+    <button class="scroll-top" aria-label="맨 위로">&uarr;</button>
+
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="닫기">&times;</button>
+        <button class="lightbox-prev" aria-label="이전 사진">&#8249;</button>
+        <img src="" alt="" class="lightbox-img">
+        <button class="lightbox-next" aria-label="다음 사진">&#8250;</button>
+    </div>
+
     <script src="js/nav.js"></script>
+    <script src="js/gallery.js"></script>
 </body>
 </html>
