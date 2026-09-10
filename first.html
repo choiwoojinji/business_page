@@ -3,8 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DCODLAB | 코딩 스튜디오</title>
+    <meta name="description" content="DCODLAB은 프론트엔드, 백엔드, 디자인을 실습 중심으로 배우는 제주도 코딩 스튜디오입니다.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="css/first.css">
+    <script>
+        try {
+            if (localStorage.getItem("theme") === "dark") {
+                document.documentElement.setAttribute("data-theme", "dark");
+            }
+        } catch (e) {}
+    </script>
 </head>
 <body>
     <header>
@@ -49,11 +58,13 @@
 
             <ul class="util">
                 <li><a href="pages/contact.html">Contact</a></li>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Join</a></li>
+                <li><a href="pages/help.html">Help</a></li>
+                <li><a href="pages/login.html">Login</a></li>
+                <li><a href="pages/join.html">Join</a></li>
                 <li><a href="pages/sitemap.html">Sitemap</a></li>
             </ul>
+
+            <button class="theme-toggle" aria-label="다크모드 전환">DARK</button>
 
             <button class="menu-toggle" aria-label="메뉴 열기" aria-expanded="false">
                 <span></span>
@@ -166,7 +177,7 @@
             <p class="footer-logo">DCODLAB</p>
             <ul class="footer-links">
                 <li><a href="pages/contact.html">Contact</a></li>
-                <li><a href="#">Help</a></li>
+                <li><a href="pages/help.html">Help</a></li>
                 <li><a href="pages/sitemap.html">Sitemap</a></li>
             </ul>
             <p class="copyright">&copy; 2026 DCODLAB. All rights reserved.</p>

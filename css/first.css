@@ -1,5 +1,25 @@
 @charset "UTF-8";
 
+:root {
+    --bg: #fff;
+    --bg-alt: #f4f4f4;
+    --text: #111;
+    --muted: #666;
+    --muted-2: #999;
+    --border: #eee;
+    --card-bg: #fff;
+}
+
+[data-theme="dark"] {
+    --bg: #111;
+    --bg-alt: #000;
+    --text: #eee;
+    --muted: #aaa;
+    --muted-2: #888;
+    --border: #2a2a2a;
+    --card-bg: #1a1a1a;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -20,8 +40,25 @@ a {
 
 body {
     font-family: "Helvetica Neue", Arial, sans-serif;
-    background: #fff;
-    color: #111;
+    background: var(--bg);
+    color: var(--text);
+    transition: background .2s, color .2s;
+}
+
+.theme-toggle {
+    background: none;
+    border: 1px solid #444;
+    color: #aaa;
+    font-size: 11px;
+    letter-spacing: 1px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: border-color .2s, color .2s;
+}
+
+.theme-toggle:hover {
+    border-color: #fff;
+    color: #fff;
 }
 
 header {
@@ -194,7 +231,7 @@ header .util a:hover {
 
 .about {
     padding: 100px 24px;
-    background: #fff;
+    background: var(--bg);
     text-align: center;
 }
 
@@ -206,7 +243,7 @@ header .util a:hover {
 .about .eyebrow {
     font-size: 13px;
     letter-spacing: 4px;
-    color: #999;
+    color: var(--muted-2);
     margin-bottom: 16px;
 }
 
@@ -214,13 +251,13 @@ header .util a:hover {
     font-size: 28px;
     font-weight: 800;
     line-height: 1.4;
-    color: #111;
+    color: var(--text);
 }
 
 .about-desc {
     margin-top: 24px;
     font-size: 14px;
-    color: #666;
+    color: var(--muted);
     line-height: 1.8;
 }
 
@@ -241,18 +278,18 @@ header .util a:hover {
 .stats strong {
     font-size: 36px;
     font-weight: 800;
-    color: #111;
+    color: var(--text);
 }
 
 .stats span {
     font-size: 12px;
     letter-spacing: 1px;
-    color: #999;
+    color: var(--muted-2);
 }
 
 .department {
     padding: 100px 24px;
-    background: #fff;
+    background: var(--bg);
 }
 
 .department .inner {
@@ -264,7 +301,7 @@ header .util a:hover {
     text-align: center;
     font-size: 14px;
     letter-spacing: 4px;
-    color: #111;
+    color: var(--text);
     margin-bottom: 48px;
 }
 
@@ -295,18 +332,18 @@ header .util a:hover {
     margin-top: 20px;
     font-size: 16px;
     letter-spacing: 1px;
-    color: #111;
+    color: var(--text);
 }
 
 .dept-list p {
     margin-top: 8px;
     font-size: 13px;
-    color: #666;
+    color: var(--muted);
 }
 
 .gallery {
     padding: 100px 24px;
-    background: #f4f4f4;
+    background: var(--bg-alt);
 }
 
 .gallery .inner {
@@ -336,7 +373,7 @@ header .util a:hover {
 
 .community {
     padding: 100px 24px;
-    background: #fff;
+    background: var(--bg);
 }
 
 .community .inner {
@@ -349,7 +386,7 @@ header .util a:hover {
     align-items: center;
     gap: 16px;
     padding: 20px 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--border);
 }
 
 .community-list .tag {
@@ -363,7 +400,7 @@ header .util a:hover {
 .community-list a {
     flex: 1;
     font-size: 14px;
-    color: #222;
+    color: var(--text);
 }
 
 .community-list a:hover {
@@ -372,7 +409,7 @@ header .util a:hover {
 
 .community-list .meta {
     font-size: 12px;
-    color: #999;
+    color: var(--muted-2);
 }
 
 .location {
@@ -586,7 +623,7 @@ header .util a:hover {
 
 .curriculum {
     padding: 80px 24px 120px;
-    background: #fff;
+    background: var(--bg);
 }
 
 .curriculum .inner {
@@ -595,7 +632,7 @@ header .util a:hover {
 }
 
 .curriculum-list li {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--border);
 }
 
 .curriculum-list summary {
@@ -615,7 +652,7 @@ header .util a:hover {
     content: "+";
     margin-left: auto;
     font-size: 20px;
-    color: #999;
+    color: var(--muted-2);
 }
 
 .curriculum-list details[open] summary::after {
@@ -633,7 +670,7 @@ header .util a:hover {
 .curriculum-list h4 {
     font-size: 16px;
     letter-spacing: 1px;
-    color: #111;
+    color: var(--text);
 }
 
 .curriculum-list .detail {
@@ -642,7 +679,7 @@ header .util a:hover {
 
 .curriculum-list .detail p {
     font-size: 13px;
-    color: #666;
+    color: var(--muted);
     line-height: 1.6;
 }
 
@@ -656,7 +693,7 @@ header .util a:hover {
     display: list-item;
     border: none;
     font-size: 13px;
-    color: #666;
+    color: var(--muted);
     line-height: 1.7;
     margin-bottom: 6px;
 }
@@ -667,11 +704,11 @@ header .util a:hover {
     margin-top: 48px;
     font-size: 13px;
     letter-spacing: 1px;
-    color: #999;
+    color: var(--muted-2);
 }
 
 .back-link:hover {
-    color: #111;
+    color: var(--text);
 }
 
 footer {
@@ -806,18 +843,18 @@ footer .copyright {
 .sitemap-group h4 {
     font-size: 13px;
     letter-spacing: 3px;
-    color: #999;
+    color: var(--muted-2);
     margin-bottom: 16px;
 }
 
 .sitemap-group ul li {
     padding: 10px 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--border);
 }
 
 .sitemap-group ul a {
     font-size: 14px;
-    color: #222;
+    color: var(--text);
 }
 
 .sitemap-group ul a:hover {
@@ -826,7 +863,7 @@ footer .copyright {
 
 .contact-desc {
     text-align: center;
-    color: #666;
+    color: var(--muted);
     font-size: 14px;
     margin-bottom: 40px;
 }
@@ -844,13 +881,13 @@ footer .copyright {
     align-items: center;
     gap: 6px;
     font-size: 14px;
-    color: #111;
+    color: var(--text);
 }
 
 .contact-info li span {
     font-size: 11px;
     letter-spacing: 2px;
-    color: #999;
+    color: var(--muted-2);
 }
 
 .contact-form {
@@ -863,7 +900,9 @@ footer .copyright {
 
 .contact-form input,
 .contact-form textarea {
-    border: 1px solid #ddd;
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+    color: var(--text);
     padding: 14px 16px;
     font-size: 14px;
     font-family: inherit;
@@ -873,7 +912,7 @@ footer .copyright {
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
-    border-color: #111;
+    border-color: var(--text);
 }
 
 .contact-form button {
@@ -890,5 +929,17 @@ footer .copyright {
 
 .contact-form button:hover {
     background: #333;
+}
+
+.form-note {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.form-note a {
+    color: var(--text);
+    text-decoration: underline;
 }
 

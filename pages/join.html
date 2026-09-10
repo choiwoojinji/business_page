@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-    <title>Sitemap | DCODLAB</title>
-    <meta name="description" content="DCODLAB 웹사이트의 전체 페이지 구조를 한눈에 볼 수 있는 사이트맵입니다.">
+    <title>Join | DCODLAB</title>
+    <meta name="description" content="DCODLAB에 회원가입하세요.">
     <link rel="stylesheet" href="../css/first.css">
     <script>
         try {
@@ -75,41 +75,20 @@
     </header>
 
     <section class="curriculum-hero">
-        <p class="eyebrow">SITE</p>
-        <h2>SITEMAP</h2>
+        <p class="eyebrow">JOIN US</p>
+        <h2>JOIN</h2>
     </section>
 
     <section class="curriculum">
         <div class="inner">
-            <div class="sitemap-group">
-                <h4>MAIN</h4>
-                <ul>
-                    <li><a href="../first.html">HOME</a></li>
-                    <li><a href="../first.html#about">ABOUT</a></li>
-                    <li><a href="../first.html#department">DEPARTMENT</a></li>
-                    <li><a href="../first.html#gallery">GALLERY</a></li>
-                    <li><a href="../first.html#community">COMMUNITY</a></li>
-                    <li><a href="../first.html#location">LOCATION</a></li>
-                </ul>
-            </div>
-            <div class="sitemap-group">
-                <h4>DEPARTMENT</h4>
-                <ul>
-                    <li><a href="frontend.html">FRONTEND</a></li>
-                    <li><a href="backend.html">BACKEND</a></li>
-                    <li><a href="design.html">DESIGN</a></li>
-                </ul>
-            </div>
-            <div class="sitemap-group">
-                <h4>ETC</h4>
-                <ul>
-                    <li><a href="contact.html">CONTACT</a></li>
-                    <li><a href="help.html">HELP</a></li>
-                    <li><a href="login.html">LOGIN</a></li>
-                    <li><a href="join.html">JOIN</a></li>
-                    <li><a href="https://www.youtube.com" target="_blank" rel="noopener">YOUTUBE</a></li>
-                </ul>
-            </div>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="이름" required>
+                <input type="email" name="email" placeholder="이메일" required>
+                <input type="password" name="password" placeholder="비밀번호" required>
+                <input type="password" name="password-confirm" placeholder="비밀번호 확인" required>
+                <button type="button">가입하기</button>
+            </form>
+            <p class="form-note">이미 계정이 있으신가요? <a href="login.html">로그인</a></p>
             <a href="../first.html" class="back-link">← 홈으로 돌아가기</a>
         </div>
     </section>
