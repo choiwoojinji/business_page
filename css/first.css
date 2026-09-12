@@ -713,6 +713,40 @@ header .util a:hover {
     }
 }
 
+.error-page {
+    padding: 140px 24px;
+    background: var(--bg);
+    text-align: center;
+}
+
+.error-page .inner {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.error-code {
+    font-size: 72px;
+    font-weight: 800;
+    color: var(--border);
+    line-height: 1;
+}
+
+.error-page h2 {
+    margin-top: 16px;
+    font-size: 22px;
+    color: var(--text);
+}
+
+.error-desc {
+    margin-top: 12px;
+    font-size: 14px;
+    color: var(--muted);
+}
+
+.error-page .btn-apply {
+    margin-top: 40px;
+}
+
 .curriculum-hero {
     padding: 100px 24px 60px;
     background: #111;
