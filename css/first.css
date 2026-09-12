@@ -346,6 +346,53 @@ header .util a:hover {
     color: var(--muted);
 }
 
+.instructors {
+    padding: 100px 24px;
+    background: var(--bg-alt);
+}
+
+.instructors .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.instructor-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    text-align: center;
+}
+
+.instructor-list img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    margin: 0 auto;
+}
+
+.instructor-list h4 {
+    margin-top: 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: var(--text);
+}
+
+.instructor-list .role {
+    margin-top: 6px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--muted-2);
+}
+
+.instructor-list p:last-child {
+    margin-top: 12px;
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.6;
+}
+
 .gallery {
     padding: 100px 24px;
     background: var(--bg-alt);
@@ -460,7 +507,8 @@ header .util a:hover {
 
 @media (max-width: 1024px) {
     .dept-list,
-    .gallery-list {
+    .gallery-list,
+    .instructor-list {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -544,7 +592,8 @@ header .util a:hover {
 
 @media (max-width: 560px) {
     .dept-list,
-    .gallery-list {
+    .gallery-list,
+    .instructor-list {
         grid-template-columns: 1fr;
     }
 
@@ -558,6 +607,7 @@ header .util a:hover {
     }
 
     .department,
+    .instructors,
     .gallery,
     .community,
     .location {
@@ -703,10 +753,27 @@ header .util a:hover {
     margin-bottom: 6px;
 }
 
+.btn-apply {
+    display: block;
+    max-width: 280px;
+    margin: 56px auto 0;
+    padding: 16px;
+    text-align: center;
+    background: var(--text);
+    color: var(--bg);
+    font-size: 13px;
+    letter-spacing: 2px;
+    transition: opacity .2s;
+}
+
+.btn-apply:hover {
+    opacity: .8;
+}
+
 .back-link {
     display: block;
     text-align: center;
-    margin-top: 48px;
+    margin-top: 24px;
     font-size: 13px;
     letter-spacing: 1px;
     color: var(--muted-2);
