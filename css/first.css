@@ -423,6 +423,40 @@ header .util a:hover {
     transform: scale(1.03);
 }
 
+.testimonials {
+    padding: 100px 24px;
+    background: var(--bg);
+}
+
+.testimonials .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.testimonial-list li {
+    padding: 32px;
+    border: 1px solid var(--border);
+}
+
+.testimonial-list .quote {
+    font-size: 14px;
+    color: var(--text);
+    line-height: 1.7;
+}
+
+.testimonial-list .who {
+    margin-top: 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: var(--muted-2);
+}
+
 .community {
     padding: 100px 24px;
     background: var(--bg);
@@ -508,7 +542,8 @@ header .util a:hover {
 @media (max-width: 1024px) {
     .dept-list,
     .gallery-list,
-    .instructor-list {
+    .instructor-list,
+    .testimonial-list {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -593,7 +628,8 @@ header .util a:hover {
 @media (max-width: 560px) {
     .dept-list,
     .gallery-list,
-    .instructor-list {
+    .instructor-list,
+    .testimonial-list {
         grid-template-columns: 1fr;
     }
 
@@ -609,6 +645,7 @@ header .util a:hover {
     .department,
     .instructors,
     .gallery,
+    .testimonials,
     .community,
     .location {
         padding: 60px 20px;
