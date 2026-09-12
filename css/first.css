@@ -467,6 +467,26 @@ header .util a:hover {
     margin: 0 auto;
 }
 
+.community-head {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+}
+
+.write-btn {
+    padding: 8px 16px;
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-size: 12px;
+    letter-spacing: 1px;
+    transition: background .2s, color .2s;
+}
+
+.write-btn:hover {
+    background: var(--text);
+    color: var(--bg);
+}
+
 .community-list li {
     display: flex;
     align-items: center;
@@ -805,6 +825,45 @@ header .util a:hover {
 
 .btn-apply:hover {
     opacity: .8;
+}
+
+.post-meta {
+    font-size: 12px;
+    color: var(--muted-2);
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+}
+
+.post-body {
+    padding: 32px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.post-body p {
+    font-size: 14px;
+    color: var(--text);
+    line-height: 1.8;
+}
+
+.post-body p + p {
+    margin-top: 16px;
+}
+
+.comment-list li {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.comment-body {
+    font-size: 13px;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.comment-meta {
+    margin-top: 8px;
+    font-size: 11px;
+    color: var(--muted-2);
 }
 
 .back-link {
