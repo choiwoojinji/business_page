@@ -22,6 +22,10 @@
 </head>
 <body>
     <a href="#main" class="skip-link">본문 바로가기</a>
+    <div class="announce-bar" id="announceBar">
+        <p class="inner">📢 2026년 하반기 신입생 모집 중 — <a href="pages/join.html">지금 지원하기</a></p>
+        <button class="announce-close" aria-label="공지 닫기">&times;</button>
+    </div>
     <header>
         <div class="inner">
             <h1><a href="#">DCODLAB</a></h1>
@@ -95,9 +99,9 @@
             <h3>흑백처럼 명확하게,<br>코드와 디자인을 배우는 곳</h3>
             <p class="about-desc">DCODLAB은 프론트엔드, 백엔드, 디자인을 실습 중심으로 배우는 코딩 스튜디오입니다. 화려한 이론보다 직접 만들어보는 과정을 통해 실력을 쌓습니다.</p>
             <ul class="stats">
-                <li><strong>3</strong><span>전문 트랙</span></li>
-                <li><strong>6</strong><span>단계별 커리큘럼</span></li>
-                <li><strong>1</strong><span>제주도 캠퍼스</span></li>
+                <li><strong data-target="3">0</strong><span>전문 트랙</span></li>
+                <li><strong data-target="6">0</strong><span>단계별 커리큘럼</span></li>
+                <li><strong data-target="1">0</strong><span>제주도 캠퍼스</span></li>
             </ul>
         </div>
     </section>
@@ -188,6 +192,58 @@
         </div>
     </section>
 
+    <section id="faq" class="faq">
+        <div class="inner">
+            <h3 class="section-title">FAQ</h3>
+            <ul class="faq-list">
+                <li>
+                    <details>
+                        <summary><h4>비전공자도 수강할 수 있나요?</h4></summary>
+                        <div class="detail">
+                            <p>네, 대부분의 수강생이 비전공자로 시작합니다. 기초 단계부터 실습 중심으로 진행되어 처음이어도 따라올 수 있도록 커리큘럼이 구성되어 있습니다.</p>
+                        </div>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><h4>수업은 어떤 방식으로 진행되나요?</h4></summary>
+                        <div class="detail">
+                            <p>제주도 캠퍼스에서 오프라인으로 진행되며, 이론 강의보다 직접 만들어보는 실습 위주로 커리큘럼이 짜여 있습니다.</p>
+                        </div>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><h4>수강 신청은 어떻게 하나요?</h4></summary>
+                        <div class="detail">
+                            <p>상단의 Join 메뉴 또는 아래 상담 신청 폼을 통해 문의해주시면 담당자가 안내해 드립니다.</p>
+                        </div>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><h4>수료 후 취업 지원이 있나요?</h4></summary>
+                        <div class="detail">
+                            <p>포트폴리오 피드백과 취업 연계 지원을 제공하며, 수강생 후기에서도 확인하실 수 있습니다.</p>
+                        </div>
+                    </details>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="consult" class="consult">
+        <div class="inner">
+            <h3 class="section-title">FREE CONSULTATION</h3>
+            <p class="consult-desc">궁금한 점이 있다면 이메일을 남겨주세요. 담당자가 빠르게 안내해 드립니다.</p>
+            <form class="consult-form" id="consultForm" novalidate>
+                <input type="email" name="email" placeholder="이메일 주소" required aria-label="이메일 주소">
+                <button type="submit">상담 신청</button>
+            </form>
+            <p class="consult-result" id="consultResult" role="status" aria-live="polite"></p>
+        </div>
+    </section>
+
     <section id="community" class="community">
         <div class="inner">
             <h3 class="section-title">FREE COMMUNITY</h3>
@@ -250,5 +306,8 @@
 
     <script src="js/nav.js"></script>
     <script src="js/gallery.js"></script>
+    <script src="js/announce.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/consult.js"></script>
 </body>
 </html>

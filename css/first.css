@@ -1182,3 +1182,163 @@ footer .copyright {
     text-decoration: underline;
 }
 
+.announce-bar {
+    position: relative;
+    background: #4d90fe;
+    color: #fff;
+}
+
+.announce-bar .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 48px 10px 24px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.announce-bar a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.announce-close {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.faq {
+    padding: 100px 24px;
+    background: var(--bg);
+}
+
+.faq .inner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-list li {
+    border-bottom: 1px solid var(--border);
+}
+
+.faq-list summary {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 24px 0;
+    cursor: pointer;
+    list-style: none;
+}
+
+.faq-list summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-list summary::after {
+    content: "+";
+    margin-left: auto;
+    font-size: 18px;
+    color: var(--muted-2);
+}
+
+.faq-list details[open] summary::after {
+    content: "−";
+}
+
+.faq-list summary h4 {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--text);
+}
+
+.faq-list .detail {
+    padding: 0 0 24px;
+}
+
+.faq-list .detail p {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.consult {
+    padding: 100px 24px;
+    background: var(--bg-alt);
+    text-align: center;
+}
+
+.consult .inner {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.consult-desc {
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.consult-form {
+    display: flex;
+    gap: 12px;
+    margin-top: 32px;
+}
+
+.consult-form input {
+    flex: 1;
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+    color: var(--text);
+    padding: 14px 16px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.consult-form input:focus {
+    outline: none;
+    border-color: var(--text);
+}
+
+.consult-form button {
+    padding: 14px 24px;
+    background: #111;
+    color: #fff;
+    border: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background .2s;
+}
+
+.consult-form button:hover {
+    background: #333;
+}
+
+.consult-result {
+    margin-top: 16px;
+    font-size: 13px;
+    color: var(--text);
+    min-height: 1em;
+}
+
+.consult-result.error {
+    color: #d33;
+}
+
+@media (max-width: 560px) {
+    .consult-form {
+        flex-direction: column;
+    }
+}
+
