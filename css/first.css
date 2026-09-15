@@ -1342,3 +1342,51 @@ footer .copyright {
     }
 }
 
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity .6s ease, transform .6s ease;
+}
+
+.reveal.in-view {
+    opacity: 1;
+    transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.community-head {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.community-search {
+    flex: 1;
+    max-width: 260px;
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+    color: var(--text);
+    padding: 8px 14px;
+    font-size: 13px;
+    font-family: inherit;
+}
+
+.community-search:focus {
+    outline: none;
+    border-color: var(--text);
+}
+
+.community-empty {
+    padding: 32px 0;
+    text-align: center;
+    font-size: 13px;
+    color: var(--muted-2);
+}
+
