@@ -993,6 +993,27 @@ footer .copyright {
     letter-spacing: 1px;
 }
 
+.footer-sns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 16px;
+}
+
+.footer-sns a {
+    color: #666;
+    font-size: 11px;
+    letter-spacing: 1px;
+    border: 1px solid #333;
+    padding: 6px 14px;
+    transition: color .2s, border-color .2s;
+}
+
+.footer-sns a:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
 .scroll-top {
     position: fixed;
     bottom: 32px;
