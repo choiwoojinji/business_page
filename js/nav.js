@@ -11,6 +11,23 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+    var header = document.querySelector("header");
+    if (!header) return;
+
+    var lastScroll = window.scrollY;
+
+    window.addEventListener("scroll", function () {
+        var current = window.scrollY;
+        if (current > lastScroll && current > header.offsetHeight) {
+            header.classList.add("header-hidden");
+        } else {
+            header.classList.remove("header-hidden");
+        }
+        lastScroll = current;
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
     var scrollTopBtn = document.querySelector(".scroll-top");
     if (!scrollTopBtn) return;
 
