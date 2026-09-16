@@ -92,10 +92,20 @@
                 <li><span>EMAIL</span>hello@dcodlab.com</li>
                 <li><span>LOCATION</span>제주도</li>
             </ul>
-            <form class="contact-form" action="mailto:hello@dcodlab.com" method="post" enctype="text/plain">
-                <input type="text" name="name" placeholder="이름" required>
-                <input type="email" name="email" placeholder="이메일" required>
-                <textarea name="message" placeholder="메시지" rows="6" required></textarea>
+            <form class="contact-form" id="contactForm" action="mailto:hello@dcodlab.com" method="post" enctype="text/plain" novalidate>
+                <div class="field">
+                    <input type="text" name="name" id="contactName" placeholder="이름" required>
+                    <span class="field-error" id="contactNameError"></span>
+                </div>
+                <div class="field">
+                    <input type="email" name="email" id="contactEmail" placeholder="이메일" required>
+                    <span class="field-error" id="contactEmailError"></span>
+                </div>
+                <div class="field">
+                    <textarea name="message" id="contactMessage" placeholder="메시지" rows="6" maxlength="500" required></textarea>
+                    <span class="field-count" id="contactMessageCount">0 / 500</span>
+                    <span class="field-error" id="contactMessageError"></span>
+                </div>
                 <button type="submit">보내기</button>
             </form>
             <a href="../first.html" class="back-link">← 홈으로 돌아가기</a>
@@ -117,5 +127,6 @@
     <button class="scroll-top" aria-label="맨 위로">&uarr;</button>
 
     <script src="../js/nav.js"></script>
+    <script src="../js/contact-form.js"></script>
 </body>
 </html>

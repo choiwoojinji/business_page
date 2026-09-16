@@ -1014,6 +1014,29 @@ footer .copyright {
     border-color: #fff;
 }
 
+.contact-form .field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.contact-form input.invalid,
+.contact-form textarea.invalid {
+    border-color: #d33;
+}
+
+.field-error {
+    font-size: 12px;
+    color: #d33;
+    min-height: 1em;
+}
+
+.field-count {
+    align-self: flex-end;
+    font-size: 11px;
+    color: var(--muted-2);
+}
+
 .scroll-top {
     position: fixed;
     bottom: 32px;
