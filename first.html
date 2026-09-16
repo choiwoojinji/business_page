@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="css/first.css">
     <script>
         try {
-            if (localStorage.getItem("theme") === "dark") {
+            var storedTheme = localStorage.getItem("theme");
+            var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+            if (storedTheme === "dark" || (!storedTheme && prefersDark)) {
                 document.documentElement.setAttribute("data-theme", "dark");
             }
         } catch (e) {}
