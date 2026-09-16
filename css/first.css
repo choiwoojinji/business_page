@@ -489,6 +489,13 @@ header .util a:hover {
     border: 1px solid var(--border);
 }
 
+.testimonial-list .rating {
+    color: #f5a623;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+
 .testimonial-list .quote {
     font-size: 14px;
     color: var(--text);
